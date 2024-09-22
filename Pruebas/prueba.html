@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="prueba.css">
+    <title>Pruebas</title>
+</head>
+<body>
+    <div class="container" id="flexContainer">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+    </div>
+    
+    <!-- Contenedor de botones -->
+    <div class="button-container">
+        <button onclick="setAlignContent('flex-start')">Flex Start</button>
+        <button onclick="setAlignContent('flex-end')">Flex End</button>
+        <button onclick="setAlignContent('center')">Center</button>
+        <button onclick="setAlignContent('space-between')">Space Between</button>
+        <button onclick="setAlignContent('space-around')">Space Around</button>
+        <button onclick="setAlignContent('space-evenly')">Space Evenly</button>
+        <button onclick="setAlignContent('stretch')">Stretch</button>
+    </div>
+
+    <script src="prueba.js"></script>
+</body>
+</html>

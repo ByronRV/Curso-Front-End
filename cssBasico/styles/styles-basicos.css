@@ -1,0 +1,294 @@
+:root{
+    --color-uno: #050C9C;
+    --color-dos: #3572EF;
+    --color-tres: #3ABEF9;
+    --color-cuatro: #A7E6FF;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 30px;
+}
+
+body {
+    background-color:var(--color-cuatro);
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+}
+/*Selesctores*/
+p {     /*Por elementos*/
+    color: brown;   /*Color de texto*/
+}
+.ingrediente-faltante { /*Por clases*/
+    color: blueviolet;
+}
+#ingrediente-secreto { /*Por ID*/
+    color: blue;
+}
+
+/*Propiedades de texto y fuente*/
+.propiedades-texto {
+    font-family: monospace, fantasy, sans-serif;/*Si no carga la primera pone la siguiente*/
+    font-size: 30px;    /*Tamaño de la letra*/
+    font-weight: 900;   /*Grosor de la letra, bold=700 y bolder>700*/
+    font-style: italic; /*Cursiva, normal, oblique*/
+    text-align: center; /*Alinea el texto dentro de su contenedor*/
+    text-decoration: underline; /*Subrayado*/
+    line-height: 2; /*Espaciado entre lineas*/
+    letter-spacing: 1px;    /*Espaciado entre letras*/
+    text-transform: uppercase; /*Transforma en mayuscula, minuscula, primer letra de cada palabra*/
+}
+
+/*Tipografías externas*/
+.tipografias-externas{  /* Primera forma */
+    font-family: "Indie Flower", "montserrat";
+    font-size: 30px;
+    font-weight: 600;
+}
+.tipografia-externa-recomendada {   /* Segunda forma */
+    font-family: 'Montserrateee';
+    font-size: 30px;
+    font-weight: 600; /*Con esta forma solo toma los valores configurados en fonts.css o el mas cercano*/
+}
+
+/*Modelo de caja*/
+.box-model{
+    text-align: center;
+}
+.box-model img {
+    width: 700px;   /*Ancho*/
+    height: 400px;  /*Alto*/
+    border-radius: 20px;    /*Esquinas redondeadas*/
+    padding: 30px;  /*Espacio igual entre el contenido y el borde hacia todos los lados*/
+    border: 10px solid blue; /*Borde*/
+    margin: 30px; /*Espaciodesde el borde hacia afuera*/
+}
+
+/*Margin y padding*/
+.formulario {
+    background: red;
+    /*padding-top: 20px; /*Espacio arriba*/
+    /*padding-right: 40px; /*Espacio a la derecha*/
+    /*padding-bottom: 30px; /*Espacio abajo*/
+    /*padding-left: 15px; /*Espacio a la izquierda*/
+    padding: 20px 30px 40px 15px; /*espacio: arriba, derecha, abajo, izquierda*/
+}
+.formulario_input {
+    padding: 10px;
+    width: 100%;
+    background-color: aqua;
+    color: blueviolet;
+    margin: 10px;
+}
+.formulario_submit {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background: blueviolet;
+    color: white;
+    width: 50%;
+}
+
+/*Bordes*/
+.div-bordes {
+    background: red;
+    width: 150px;
+    margin: auto;
+    text-align: center;
+    /*border-style: solid;    /*Solido, punteado, 3d, etc*/
+    /*border-width: 4px;  /*Grosor del borde*/
+    /*border-color: green;    /*Color del borde*/
+    border: 4px solid green;    /*Esta sola linea hace todo lo anterior*/
+    border-radius: 30px 4px 30px 4px;
+}
+.inptut-bordes {
+    margin: 5px;
+    padding: 6px 9px;
+    border: none;
+    border-top: 4px solid black;
+    background: lavender;
+    border-radius: 8px;
+}
+
+/*Tamaño de caja (box sizing)*/
+.box-default {
+    width: 100px;
+    height: 100px;
+    background: red;
+    margin: 10px;
+    box-sizing: content-box;    /*El tamaño de la caja se adapta al contenido*/
+    padding: 25px;
+    border: 10px solid black;
+}
+.box-new {
+    width: 100px;
+    height: 100px;
+    background: red;
+    margin: 10px;
+    box-sizing: border-box;     /*El contenido se adapta al tamaño de la caja*/
+    padding: 25px;
+    border: 10px solid black;
+}
+
+/*Colores*/
+.color-rgb {
+    width: 170px;
+    height: 170px;
+    margin: 10px;
+    background: rgb(255, 100, 255, 10); /*El cuarto número es opacidad*/
+}
+.color-hexadecimal {
+    width: 170px;
+    height: 170px;
+    margin: 10px;
+    background: #2266ff; /*Tambien se puede poner #26f*/
+    /*los dos primeros números R, los dos segundos es G y los dos ultimos es B*/
+}
+.color-hsl {
+    width: 170px;
+    height: 170px;
+    margin: 10px;
+    background: hsl(145, 73%, 68%); /*Color, saturación y luminancia*/
+}
+
+/*unidades de medida*/
+.div-medidas-absolutas {    /*Se puede poner cm, mm, in, px*/
+    background: #ededed;
+    padding: 1cm;
+    font-family: sans-serif;
+    border-left: 5mm solid #999;
+}
+.div-medidas-relativas {    /*Se puede poner %, vh y vw y depende de su caja contenedora*/
+    background: #afafef;
+    padding: 5%;
+    font-family:fantasy;
+    border-left: 15px solid #3a09ac;
+    font-size: 20px;    /*font-size padre*/
+    box-sizing: border-box;
+    /*El viewport se ajusta al tamaño de la ventana*/
+    height: 80vh; /*viewport height: altura de la ventana gráfica*/
+    width: 80vw; /*viewport width: ancho de la ventana grafica*/
+}
+.p-medidas-relativas {  /*El % No se deberia usar con texto, padding ni margin*/
+    color: #2266ff;
+    background-color: bisque;
+    margin: 0;
+    width: 50%;
+    font-size: 1.5em;/*em: Toma la configuración del padre y lo multiplica por la cantidad de em. ejemplo: 20px*1.5em=30px*/
+    /*em funciona en cascada*/
+    /*Tamaño por defecto de un HTML es 16px*/
+    /*font-size: 1.5rem;/*rem: toma la configuracion de la raiz, es decir el del html y lo multiplica por la cantidad de rem. ejemplo: 16px*1.5rem=24px */
+}
+
+/*Fondos*/
+.div-fondos {
+    color: white;
+    width: 100%;
+    height: 100px;
+    padding: 20px;
+    /*background-image: url(https://www.ngenespanol.com/wp-content/uploads/2023/08/dia-mundial-del-leon-curiosidades-sobre-el-rey-de-la-sabana.jpg) ;*/
+    /*background-size: cover; */
+        /*contain: forza que la imagen quepa completa dentro de un contenedor*/
+        /*cover: forza que la imagen cubra todo el contenedor*/
+    /*background-position: center;*/
+    /*background-repeat: no-repeat; /*No permite que la imagen se duplique*/
+    /*background-attachment: fixed; /*Para que la imagen tenga un efecto scroll*/
+        /*esta linea hace todo lo anterior:*/
+    background: url(https://www.ngenespanol.com/wp-content/uploads/2023/08/dia-mundial-del-leon-curiosidades-sobre-el-rey-de-la-sabana.jpg) center / cover no-repeat fixed #6fa;
+        /*siempre debe ir "/" despues de la posición*/
+}
+
+/*Gradientes*/
+.content-gradiente{
+    display: flex;
+    gap: 20px;
+}
+.div-gradiente {
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(transparent, red, black);
+    border-radius: 7px;
+    margin: auto;
+    margin-top: 20px;
+    border-top: 6px solid #900;
+}
+.div-gradiente2 {
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(to right, transparent, red, black);
+    border-radius: 7px;
+    margin: auto;
+    margin-top: 20px;
+    border-top: 6px solid #900;
+}
+.div-gradiente3 {
+    color: white;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(transparent, red, black);
+    border-radius: 7px;
+    margin: auto;
+    margin-top: 20px;
+    border-top: 6px solid #900;
+}
+.div-gradiente4 {
+    color: white;
+    width: 400px;
+    height: 400px;
+    background: conic-gradient(transparent, red, black);
+    border-radius: 7px;
+    margin: auto;
+    margin-top: 20px;
+    border-top: 6px solid #900;
+}
+
+/* Sombras */
+.main-sombras{
+    display: flex;
+    justify-content: space-around;
+    margin: 30px;
+}
+.sombra-caja {
+    width: 400px;
+    height: 400px;
+    background: #e2e2e2;
+    /* sombreado horizontal / vertical / difuminado / expanción */
+    box-shadow: 20px 20px 50px 10px #000000;
+    /* box-shadow: 0 0 50px 0 #000000; *//*Recomendado*/
+}
+.sombra-texto {
+    width: 400px;
+    height: 400px;
+    background: #e2e2e2;
+    overflow: hidden;/* Oculta el contenido que se desborda */
+    font-family: sans-serif;
+    color: #444;
+    box-shadow: 0 0 50px 0 #000000;/*Recomendado*/    
+    list-style: none;
+    text-align: justify;
+    line-height: 1.4;
+    font-size: 14px;
+    /* horizontal / vertical / difuminado */
+    text-shadow: 0 0 10px #f88;
+}
+.sombra-imagen {
+    width: 400px;
+    height: 400px;
+    background: #e2e2e2;
+    text-align: center;
+    box-shadow: 0 0 50px 0 #2266ff;
+}
+.som-imagen {
+    width: 160px;
+    border-radius: 100%;
+    box-shadow: 0 0 50px 0 #000;
+}
+.som-imagen2 {
+    width: 160px;
+    filter: drop-shadow(0 0 15px #000); /* Para .png */
+}

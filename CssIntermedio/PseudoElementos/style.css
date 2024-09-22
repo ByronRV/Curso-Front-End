@@ -1,0 +1,37 @@
+body{
+    font-family: sans-serif;
+    font-size: 22px;
+    padding: 10px;
+}
+header{
+    text-align: center;
+}
+h2::first-letter{/* Primera letra de una palabra */
+    color: red;
+    font-size: 3em;
+    letter-spacing: -30px;
+}
+h2::selection{/* Al seleccionar la palabra su fondo es morado */
+    background: purple;
+    color: white;
+}
+p::first-line{/* Primera linea del parrafo */
+    color: blue;
+    font-weight: bold;
+}
+input::placeholder{
+    color: greenyellow;
+    background: black;
+}
+li::marker{
+    color: red;
+}
+li::before{/* Agrega elemento antes */
+    content: 'Antes ';
+    color: orange;
+}
+li::after{/* Agrega elemento despues */
+    content: ' Despúes';
+    color: orchid;
+    background: aquamarine;
+}

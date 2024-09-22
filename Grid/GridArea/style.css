@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    display: grid;
+    grid-template-rows: 60px auto 50px;
+}
+header, footer{
+    background: #d67a3c;
+    text-align: center;
+    align-content: center;
+    color: #eee;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px,1fr));
+    grid-auto-flow: dense;
+    gap: 10px;
+    padding: 10px;
+    min-height: 100vh;
+}
+.grid-item{
+    background-color: #48e;
+    border-radius: 16px;
+    background: url(dead.jpg) center / cover no-repeat local #444;
+    font-size: 30px;
+    color: #eee;
+}
+/* AREA */
+.grid-item:nth-child(10){
+    /* grid-area: filas / columnas; */
+    grid-area: span 2 / span 3;
+}
+
+/* Ejercicio */
+footer a{
+    text-decoration: none;
+    color: #eee;
+    font-size: 20px;
+    border: 2px solid #eee;
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 30px;
+}
+footer a:hover{
+    background-color: #ccd63c;
+    color: #444;
+}

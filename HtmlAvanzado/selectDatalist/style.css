@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{    
+    font-family: "Modern Antiqua", serif;
+    font-size: 22px;
+    color: #eee;
+    background: #222;
+}
+
+form{
+    background-color: transparent;
+    padding: 20px 0;
+    max-width: 500px;/* Maximo que se puede estirar */
+    margin: auto;/* Para que se centre siempre */
+    box-shadow: 0px 0px 55px #fff2;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+
+h2{
+    text-align: center; 
+    margin-bottom: 5px;
+    font-weight: 100;
+    padding: 10px;
+    font-size: 1.4em;
+}
+
+.form_input{
+    padding: 30px 20px 80px 20px;
+}
+
+select, input{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 3px 12px;
+    border: 1px solid #999;
+    box-shadow: 0px 0px 15px #0003;
+    background-color: transparent;
+    color: #eee;
+    border-radius: 8px;
+}
+
+option{
+    background: #222;
+}

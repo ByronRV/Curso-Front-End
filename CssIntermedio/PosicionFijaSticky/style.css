@@ -1,0 +1,54 @@
+body{
+    font-family: sans-serif;
+    font-size: 18px;
+    margin: 0;
+    background: cadetblue;
+}
+header{
+    width: 100%;
+    text-align: center;
+    background: #f73b;
+    padding: 5px;
+    position: sticky;
+    top: 0px;
+}
+.box-fixed{
+    width: 230px;
+    height: 80px;
+    background: #f00b;
+    position: fixed;/* Queda fija en la pantalla */
+    top: 300px;
+    right: 10px;
+    z-index: 30;
+    padding: 0 10px 0 20px;
+    border-radius: 10px;
+}
+.box-sticky{
+    width: 250px;
+    height: 60px;
+    text-align: center;
+    color: #eee;
+    background: #307b;
+    position: sticky;/* Queda fija al alcanzar la medida asignada */
+    top: 120px;/* Medida asignada */
+    border-radius: 10px;
+    z-index: 40;
+    padding: 10px;
+}
+.segunda{
+    top: 210px;/* Medida asignada */
+    background: #f27b;
+}
+.tercera{
+    top: 300px;/* Medida asignada */
+    background: #32db;
+}
+.cuarta{
+    top: 390px;/* Medida asignada */
+    background: #00ab;
+}
+.quinta{
+    height: 100px;
+    top: 480px;/* Medida asignada */
+    background: #f73b;
+}

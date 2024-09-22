@@ -1,0 +1,37 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 30px;
+}
+
+body{
+    background: #333;
+    color: #ddd;
+    font-family: sans-serif;
+    padding: 22px;
+}
+
+details{
+    background: transparent;
+    border: 1px solid #ddd;
+    padding: 9px;
+    font-size: 1em;
+    color: #aaa;
+}
+
+details[open]{/* Cambia cuando se abre el details */
+    border: 1px solid #ddd;
+    background: #555;
+}
+
+summary {
+    background: transparent;
+    font-size: 1em;
+    color: #eee;
+}
+
+ul, p{
+    padding: 20px 20px 20px 80px;
+}
+

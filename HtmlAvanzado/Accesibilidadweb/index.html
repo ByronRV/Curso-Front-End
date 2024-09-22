@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Accesibilidad WEB</title>
+</head>
+<body>
+    <h1>ACCESIBILIDAD WEB</h1>
+    <p aria-label="Parrafo que describe para que sirve el aria-label">"aria-label": es un atributo de accesibilidad en HTML que proporciona una etiqueta accesible para un elemento interactivo que no tiene contenido textual visible que describa su propósito. Este atributo es especialmente útil para usuarios que utilizan lectores de pantalla. Para probarlo activamos la extension <strong>Screen Reader</strong></p>
+    <p>Para medir la accesibilidad lo hacemos presionando la tecla F12 en la página que estamos desarrollando, luego en la sección <strong>Lighthouse,</strong> allí le damos en analizar y nos muestra el porcentaje de accesibilidad y algunos consejos para mejorarla </p>
+    <img loading="lazy" src="Mustang.jpg" alt="Auto mustang negro">
+    <!-- aria-labe Se usa para que las personas con discapacidad tengan mejos accesibilidad -->
+    <nav>
+        <ul>
+            <li>Uno</li>
+            <li>Dos</li>
+            <li>Tres</li>
+            <li>Cuatro</li>
+        </ul>
+    </nav>
+    <a href="https://www.youtube.com/watch?v=m67d6q_oYHo" 
+    aria-label="Link que nos lleva a un video donde explican como hacer este tipo de página" rel="noopener noreferrer nofollow" target="_blank">Accesibilidad web</a>
+    <footer>
+        <a href="../index.html" aria-label="Enlace que me regresa al menú anterior">Regresar</a>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,56 @@
+body{
+    font-family: sans-serif;
+    font-size: 22px;
+}
+header{
+    text-align: center;
+}
+/* Al pasar el mouse sobre */
+h2:hover{
+    color: red;
+    background: aquamarine;
+}
+/* Al hacer click sobre */
+h3:active{
+    color: blue;
+    background: burlywood;
+    cursor: pointer;
+}
+/* Primero, ultimo y n elemento */
+li:first-child{
+    color: blue;
+}
+li:last-child{
+    color: red;
+}
+li:nth-child(3){
+    color: green;
+}
+li:nth-child(2n){/* de 2 en 2 */
+    color:darkmagenta;
+}
+ul:nth-of-type(1){/* Primer ul */
+    background: aquamarine;
+}
+/* li:not(.excluir){ excluye esté elemento del cambio que se le hizo al resto
+    color: coral;
+} */
+div:empty{/* Solo funciona si el elemento está vacío */
+    background-color: chartreuse;
+}
+input[type="checkbox"]:checked{
+    margin: 50px;
+}
+input:invalid{/* cambia de olor si es un dato invalido */
+    color: red;
+}
+input:valid{/* cambia de olor si es un dato valido */
+    color: purple;
+}
+/* Enlaces  no visitados */
+a:link{
+    color: greenyellow;
+}
+a:visited{
+    color: darkorange;
+}

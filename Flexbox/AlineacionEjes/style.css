@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    font-size: 20px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+}
+header{
+    text-align: center;
+    padding: 8px;
+    margin-bottom: 20px;
+}
+main{
+    display: flex;
+    flex-flow: column nowrap;
+}
+.justify-btns, .items-btns, .content-btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0 10px 0;
+}
+.btns{
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 520;
+    border-radius: 10px;
+    background: #5555da;
+    color: #eee;
+}
+.btns:hover{
+    background: #7fffd4;
+    color: #222;
+}
+h2{
+    display: inline-block;
+    font-size: 25px;
+}
+/* JUSTIFY-CONTENT */
+.box{
+    padding: 10px;
+    border: 2px solid #222;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 10px;
+    justify-content: start;
+}
+.item{
+    width: 150px;
+    height: 80px;
+    background: #f00;
+    border-radius: 10px;
+    text-align: center;
+    color: #eee;
+    font-size: 50px;
+}
+/* ALIGN-ITEMS */
+/* No se define el alto de los items, si nó no funciona */
+.box2{
+    border: 2px solid #222;
+    height: 250px;
+    max-width: 900px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: start;
+}
+.aItem{
+    width: 150px;
+    background: #1739d1;
+    border-radius: 10px;
+    text-align: center;
+    color: #eee;
+    font-size: 30px;
+}
+.aItem:nth-child(2n){
+    background: #005a1b;
+    font-size: 60px;
+}
+p{
+    padding: 30px;
+}
+/* ALIGN-CONTENT */
+.box3{
+    border: 2px solid #222;
+    height: 250px;
+    max-width: 900px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-content: end;
+}
+.cItem{
+    width: 150px;
+    background: #fa0;
+    border-radius: 10px;
+    text-align: center;
+    color: #eee;
+    font-size: 50px;
+}
+.cItem:nth-child(2n){
+    background: #08ad23;
+}
+footer{
+    padding: 5px;
+}

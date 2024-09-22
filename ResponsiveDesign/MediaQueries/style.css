@@ -1,0 +1,40 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    font-family: sans-serif;
+    font-size: 15px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+header, footer{
+    background-color: #c5a1e7;
+    padding: 15px;
+    min-width: 100%;
+    text-align: center;
+}
+.flexbox{
+    padding: 20px;
+    display: flex;
+}
+.flex-item{
+    background: #ccc;
+    padding: 30px;
+    border: 1px solid #f00;
+    flex-grow: 1;
+}
+@media print {/* Al imprimir aumenta el tamaño de la letra */
+    body{
+        font-size: 50pt;
+    }
+}
+@media screen and (max-width: 700px){/* Cambia si el tamaño de la pantalla y el maximo de resolución maximo de 700px */
+    .flexbox{
+        flex-direction: column;
+    }
+}

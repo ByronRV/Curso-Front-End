@@ -1,0 +1,71 @@
+*{
+    font-family: "Modern Antiqua", serif;
+    font-size: 25px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    color: #eee;
+    background: #39d3;
+    letter-spacing: 5px;
+    gap: 60px;
+}
+h1{
+    font-size: 60px;
+}
+.logo{
+    width: 230px;
+    filter: drop-shadow(0 0 10px #eee);
+}
+body{
+    background: url(./assets/flex.jpg) center / cover no-repeat fixed #4547d1;
+}
+main{
+    max-width: 600px;
+    margin: auto;
+    background: #29db;
+    margin-top: 50px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #eee;
+    color: #eee;
+}
+.menu{
+    max-width: 530px;
+    padding: 30px 0 30px 60px;
+}
+a{
+    text-decoration: none;
+    color: #eee;
+    font-size: 25px;
+    line-height: 1.5;
+}
+li:hover{
+    background: #3179;    
+    border-radius: 10px;
+    animation: zoom 0.5s ease-in-out;
+}
+footer{
+    padding: 15px;
+    background: #29d;
+    margin-top: 150px;
+    text-align: center;
+}
+footer a:hover{
+    background: #317;
+    padding: 10px;
+    border-radius: 5px;
+}
+@keyframes zoom {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.2);
+    }
+}

@@ -1,0 +1,22 @@
+* {
+    font-family: "Cutive", serif;
+    font-size: 23px;
+    margin: 0;
+    padding: 0;
+    background: #e7df6f;
+}
+
+h1 {
+    padding: 30px;
+    text-align: center;
+}
+
+.imagen {
+    
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    width: 1300px;
+}

@@ -1,0 +1,26 @@
+body{
+    font-family: sans-serif;
+    font-size: 22px;
+    padding: 20px;
+}
+header{
+    text-align: center;
+}
+.lista{
+    border: 2px solid #222;
+}
+.lista__item{
+    color: grey;
+    margin: 10px 0;
+    list-style: square;
+}
+.item--danino{
+    color: red;
+}
+.item--importante{
+    color: blue;
+}
+.lista--vieja{
+    opacity: 0.3;
+    background-color: #ccc;
+}

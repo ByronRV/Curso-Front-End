@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{    
+    font-family: "Modern Antiqua", serif;
+    font-size: 22px;
+    color: #eee;
+    background: #222;
+}
+
+h2{
+    text-align: center;
+    margin: 0;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: 100;
+    padding: 10px;
+    font-size: 1.4em;
+}
+
+form{
+    background-color: transparent;
+    padding: 20px 0;
+    max-width: 500px;/* Maximo que se puede estirar */
+    margin: auto;/* Para que se centre siempre */
+    box-shadow: 0px 0px 55px #fff2;
+    margin-top: 50px;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.form_input{
+    padding: 6px 20px;
+}
+
+input, textarea{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px 12px;
+    border: 1px solid #999;
+    box-shadow: 0px 0px 15px #0003;
+    background-color: transparent;
+    color: #eee;
+    border-radius: 8px;
+}
+
+textarea{
+    min-width: 100%;/* minimo del ancho */
+    resize: vertical;/* solo se puede cambiar de tamaño en vertical */
+    min-height: 100px;/* minimo de altura */
+    font-family: "Modern Antiqua", serif;
+    field-sizing: content;/* el textarea va creciendo según el texto que valla ingresando */
+}
+
+label{
+    font-size: 0.9em;
+    margin-bottom: 40px;
+    line-height: 2;
+}

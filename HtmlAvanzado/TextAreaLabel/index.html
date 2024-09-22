@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Cutive&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+    <title>Taxtarea</title>
+</head>
+<body>
+    <form>
+        <h2>Formulario de contacto</h2>
+        <div class="form_input">
+            <!-- for enlaza con el id de otro elemento -->
+            <label for="nombre">Nombre completo</label>
+            <input type="text" placeholder="John Connor" id="nombre">
+        </div>
+        <div class="form_input">
+            <label for="mail">Email</label>
+            <input type="text" placeholder="ejemplo@gmail.com" id="mail">
+        </div>
+        <div class="form_input">
+            <label for="mensaje">Mensaje</label>
+            <textarea placeholder="Deja tu mensaje..." id="mensaje"></textarea>
+            <!-- readonly: Solo lectura pero se puede enviar -->
+            <!-- disabled: no se puede enviar lo que hay dentro -->
+            <!-- maxlength: numero de caracteres que se pueden ingresar -->
+        </div>
+    </form>
+    <a href="../index.html">Regresar</a>
+</body>
+</html>

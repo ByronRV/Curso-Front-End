@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Fit & position</title>
+</head>
+<body>
+    <header>
+        <h1>OBJECT FIT Y OBJECT POSITION</h1>
+    </header>
+    <main>
+        <p>Se usan para ajustar imagenes o videos dentro de su contenedor</p>
+        <h2>Object fit:</h2>
+        <ul>
+            <li>fill: Este es el valor por defecto. El contenido se ajusta para llenar el contenedor, pero puede distorsionarse si las proporciones del contenido no coinciden con las del contenedor.</li>
+            <li>contain: El contenido se escala para encajar dentro del contenedor sin recortarse, manteniendo sus proporciones originales. Puede dejar espacio vacío en los bordes del contenedor si las proporciones no coinciden.</li>
+            <li>cover: El contenido se escala para cubrir todo el contenedor, manteniendo sus proporciones originales. Parte del contenido puede recortarse si sus proporciones no coinciden con las del contenedor.</li>
+            <li>none: El contenido no se redimensiona. Mantiene su tamaño original, lo que podría hacer que se desborde del contenedor si es más grande.</li>
+            <li>scale-down: Es una combinación de none y contain. Escala el contenido para que sea el más pequeño posible, pero sin distorsionarse. El contenido solo se redimensiona si es más grande que el contenedor.</li>
+        </ul>
+        <div>
+            <h2>
+                object-fit: fill
+                <img class="imagen" src="mustang30.jpg" alt="">
+            </h2>
+            <h2>
+                object-fit: contain
+                <img  class="imagen contain" src="mustang30.jpg" alt="">
+            </h2>
+            <h2>
+                object-fit: cover
+                <img class="imagen cover" src="mustang30.jpg" alt="">
+            </h2>
+            <h2>
+                object-fit: none
+                <img class="imagen none" src="mustang30.jpg" alt="">
+            </h2>
+            <h2>
+                object-fit: scale-down
+                <img class="imagen scale" src="mustang30.jpg" alt="">
+            </h2>
+        </div>
+        <h2>Object position:</h2>
+        <ul>
+            <li>top: Alinea el contenido en la parte superior del contenedor.</li>
+            <li>bottom: Alinea el contenido en la parte inferior del contenedor.</li>
+            <li>left: Alinea el contenido en la parte izquierda del contenedor.</li>
+            <li>right: Alinea el contenido en la parte derecha del contenedor.</li>
+            <li>center: (Valor por defecto) Alinea el contenido en el centro del contenedor.</li>
+            <li>x% y%: Posiciona el contenido según los porcentajes dados. El primer valor se refiere a la posición horizontal y el segundo a la vertical.</li>
+            <li>xpx ypx: Posiciona el contenido usando píxeles en lugar de porcentajes.</li>
+        </ul>
+        <img src="mustang6.jpg" alt="" class="position">
+    </main>
+    <footer>
+        <a href="../index.html">Regresar</a>
+    </footer>
+</body>
+</html>

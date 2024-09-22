@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    font-family: sans-serif;
+    display: grid;
+    grid-template-rows: 50px auto 30px;
+}
+header, footer{
+    background: #1aad15;
+    align-content: center;
+    text-align: center;
+}
+.grid{
+    min-height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(3, 200px);/* Explícito porque estan definidos */
+    grid-template-rows: repeat(3, 200px);/* Explícito porque estan definidos */
+    /* IMPLÍCITOS porque no estan difinidos en la grilla */
+    grid-auto-rows: 80px;/* Alto de las filas no definidas */
+    grid-auto-flow: column;/* Convierte la fila a columna */
+    grid-auto-columns: 100px;/* ancho de las columnas no definidas */
+}
+.grid-items{
+    background-color: #48e;
+    margin: 10px;
+    padding: 10px;
+    font-size: 30px;
+    color: #eee;
+}

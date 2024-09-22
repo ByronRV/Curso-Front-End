@@ -1,0 +1,55 @@
+:root{
+    --color-uno: #050C9C;
+    --color-dos: #3572EF;
+    --color-tres: #3ABEF9;
+    --color-cuatro: #A7E6FF;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;    
+    font-family: "Modern Antiqua", serif;
+}
+
+body {
+    background-color: var(--color-cuatro);
+    font-size: 30px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-uno);
+    color: var(--color-cuatro);
+    padding: 10px;
+}
+.header > img{
+    width: 100px;
+}
+
+.main {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.lista li a{
+    text-decoration: none;
+    line-height: 1.2;
+    color: var(--color-uno);
+    border-radius: 10px;
+}
+.lista li a:hover{
+    background: var(--color-tres);
+}
+
+.footer {
+    list-style-type: none;  /*Quita la enumeración o los puntos de las listas*/
+    text-align: center;
+    color: var(--color-uno);
+    background:var(--color-dos);
+    line-height: 1.5;
+}
+

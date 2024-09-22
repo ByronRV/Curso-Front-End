@@ -1,0 +1,26 @@
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    padding: 10px;
+}
+header{
+    text-align: center;
+}
+:is(.ejemplo1, .ejemplo2, .ejemplo3, .ejemplo4){
+    color: red;
+}
+:where(.element1, .element2, .element3){
+    color: blue;
+}
+/* has: si hay un hijo con clase .parrafo aplique la configuración al contenedor */
+section:has(.parrafo){
+    background: aquamarine;
+    color: blueviolet;
+}
+/* Si el correo no es valido que cambie de color el label */
+label:has(input:valid){
+    color: green;
+}
+label:has(input:invalid){
+    color: red;
+}

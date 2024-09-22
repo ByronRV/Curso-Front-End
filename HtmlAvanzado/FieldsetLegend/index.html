@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Cutive&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+    <title>Fieldset & legend</title>
+</head>
+<body>
+    <form>
+        <h2>FORMULARIO DE CONTACTO</h2>
+        <!-- FIELDSET & LEGEND -->
+        <fieldset>
+            <legend>INFORMACIÓN BÁSICA</legend>
+            <!-- SIMPLE INPUTS -->
+            <div class="form_input">
+                <label>Nombre completo
+                    <input type="text" placeholder="John Connor">
+                </label>
+            </div>
+            <div class="form_input">
+                <label>Email
+                    <input type="text" placeholder="ejemplo@gmail.com">
+                </label>
+            </div>
+            <div class="form_input">
+                <label>Asunto
+                    <input type="text" placeholder="Asunto de tu mensaje">
+                </label>
+            </div>
+        </fieldset>
+
+        <!-- SELECT & OPTION -->
+        <div class="form_input">
+            <label>Tipo de usuario
+                <select name="type-of-user"">
+                    <option value="user2">Seguidor/a</option>
+                    <option value="user1">Empresa</option>
+                    <option value="user3">Otros</option>
+                </select>
+            </label>
+        </div>
+
+        <!-- DATALIST -->
+        <div class="form_input">
+            <label>Referente
+                <input list="referente">
+                <datalist id="referente">
+                    <option value="Soy Dalto">creador de contenido</option>
+                    <option value="Una empresa">del rubro IT</option>
+                    <option value="Un amigo">Me recomenddó un amigo</option>
+                </datalist>
+            </label>
+        </div>
+
+        <!-- TEXTAREA -->
+        <div class="form_input">
+            <label for="mensaje">Mensaje
+                <textarea placeholder="Deja tu mensaje..." id="mensaje"></textarea>
+            </label>
+        </div>
+        <div class="form_input">
+            <label for="mensaje">Acepto los terminos y condiciones
+                <input type="checkbox" class="checkbox">
+            </label>
+        </div>
+    </form>
+    <a href="../index.html">Regresar</a>
+</body>
+</html>

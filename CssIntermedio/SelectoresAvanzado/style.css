@@ -1,0 +1,42 @@
+body{
+    font-family: sans-serif;
+    font-size: 24px;
+    background:paleturquoise;
+}
+header{
+    text-align: center;
+    padding: 1px;
+    background: #222;
+    color: #eee;
+    border-radius: 10px;
+}
+h2, h3{/* Le da a dos elementos la misma configuración */
+    text-align: center;
+    font-size: 30px;
+    color:darkcyan;
+}
+/* SELECTOR DE ATRIBUTO */
+img[src="mustang1.jpg"]{ /* Por atributo "src" con nombre "mustang1.jpg" */
+    width: 20%;
+}
+img[src$="png"]{ /* Por atributo "src" que termina en "png" */
+    width: 30%;
+}
+img[src^="mustang3"]{ /* Por atributo "src" que enpieza con "mustan3" */
+    width: 40%;
+}
+/* SELECTORES DESCENDIENTES */
+ul li{/* Todos los li descendientes hijos, nietos, etc que estan dentro de un ul */
+    color: red;
+}
+div > li{/* Hijo directo li que está dentro de un div*/
+    color: blueviolet;
+}
+/* SELECTOR ADYACENTE */
+h2 + p {/* Un p que esté después de un h1 (Hermanos) */
+    color:blue;
+}
+/* SELECTOR DE HERMQANOS GENERALES */
+h3 ~ p {/* Todos los p que estan depués de un h3 */
+    color: brown;
+}

@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    font-family: sans-serif;
+    display: grid;
+    grid-template-rows: 60px auto 40px;
+    justify-items: center;
+}
+header, footer{
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    background-color: #a7b665;
+}
+.grid{
+    display: grid;
+    grid-template-columns: auto 2fr 5fr;/* columnas que aparecen según el numero de medidas que pongamos */
+    grid-template-rows: 1fr 2fr;/* Filas */
+}
+.grid-item{
+    background-color: #48e;
+    margin: 10px;
+    padding: 10px;
+    font-size: 20px;
+    color: #eee;
+}

@@ -1,0 +1,23 @@
+@font-face {
+    font-family: "Montserrateee";
+    src: url("../fonts/Montserrat-ExtraLight.ttf") format("truetype"); /*El formato .ttf es truetype*/
+    font-weight: 200; /*Según información de google fonts o de valor menor*/
+}
+
+@font-face {
+    font-family: "Montserrateee";
+    src: url("../fonts/Montserrat-Regular.ttf") format("truetype");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Montserrateee";
+    src: url("../fonts/Montserrat-Bold.ttf") format("truetype");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Montserrateee";
+    src: url("../fonts/Montserrat-Black.ttf") format("truetype");
+    font-weight: 900;
+}

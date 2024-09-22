@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    font-family: sans-serif;
+    display: grid;
+    grid-template-rows: 60px auto 40px;
+    color: #eee;
+}
+header, footer{
+    background-color: #c53131;
+    text-align: center;
+    align-content: center;
+}
+h2{
+    color: #222;
+    text-align: center;
+}
+.repeat{
+    min-height: 40vh;
+    display: grid;
+    /* repeat(# de veces, medidas) */
+    grid-template-columns: repeat(3,1fr 2fr);
+}
+.minmax{
+    display: grid;
+    grid-template-columns: 200px 100px minmax(300px, 600px);
+}
+.conbinadas{
+    display: grid;
+    grid-template-columns: repeat(4,minmax(100px,300px));
+}
+.repeat-item, .minmax-item, .conbinadas-item{
+    background-color: #48e;
+    margin: 10px;
+    padding: 10px;
+    font-size: 30px;
+}

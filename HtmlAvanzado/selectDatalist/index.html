@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Select, datalist y option</title>
+</head>
+<body>
+    <form>
+        <h2>SELECT & OPTION</h2>
+        <div class="form_input">
+            <label>Tipo de usuario
+                <select name="type-of-user"">
+                    <!-- Value es el valor para que el servidor pueda leer los datos JS -->
+                    <option value="user2">Seguidor/a</option>
+                    <option value="user1">Empresa</option>
+                    <option value="user3">Otros</option>
+                </select>
+            </label>
+        </div>
+        <h2>DATALIST & OPTION</h2>
+        <div class="form_input">
+            <label>Referente
+                <input list="referente">
+                <datalist id="referente" name="type-of-user"">
+                    <option value="Soy Dalto">creador de contenido</option>
+                    <option value="Una empresa">del rubro IT</option>
+                    <option value="Un amigo">Me recomenddó un amigo</option>
+                </datalist>
+            </label>
+        </div>
+    </form>
+</body>
+</html>

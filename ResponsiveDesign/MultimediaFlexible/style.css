@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    font-size: 18px;
+}
+header, footer{
+    text-align: center;
+    background-color: #b999d6;
+    padding: 15px;
+}
+main{min-height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+/* IMAGENES */
+img{
+    max-width: 60%;/* 100% del tamaño real de la imagen */
+    height: auto;
+}
+/* VIDEOS */
+.contenedor{
+    max-width: 100%;
+    aspect-ratio: 16/9;
+}
+video{
+    max-width: 100%;
+}

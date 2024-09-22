@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Audio y Video</title>
+</head>
+<body>
+    <h1>AUDIO Y VIDEO</h1>
+    <!-- Controls: Muestra los controles del video
+    loop: Repite el video
+    autoplay: Inicia el video
+    mute: inicia el video en silencio -->
+    <video controls loop autoplay muted src="Halo.mp4" type="video/mp4">
+        <track src="subtitulos.vtt" kind="subtitles" srclang="es" label="Español">
+        <!-- Toca tener el archivo vtt de los subtitulos -->
+        No se pudo cargar el video</video>
+    <audio controls loop autoplay muted src="Ojos Color Sol.mp3"></audio>
+    <br>
+    <a href="../index.html">Regresar</a>
+</body>
+</html>
